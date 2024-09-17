@@ -17,7 +17,7 @@ const Playlist: React.FC = () => {
               title={song.title}
               artist={song.artist}
               duration={song.duration}
-              onClick={() => console.log(`Clicked on song: ${song.title}`)}
+              onClick={() => clickedFromPlaylist(song.id)}
               className={nowPlaying(song.id) ? 'bg-slate-200 rounded' : ''}
             />
           </div>
